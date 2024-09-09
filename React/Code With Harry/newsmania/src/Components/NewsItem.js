@@ -8,7 +8,7 @@ export default class NewsItem extends Component {
     let {title,description,imageUrl,newsUrl} = this.props;
     return (
       <div>
-        <div className="card my-2" style={{width: "18rem"}}>
+        <div className="card my-2">
           <img src={!imageUrl?defaultImage:imageUrl} className="card-img-top" alt={title ? title : "News"} 
             style={{ height: '180px', objectFit: 'cover' }} />
             <div className="card-body">
